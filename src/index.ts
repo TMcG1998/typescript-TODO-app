@@ -47,6 +47,7 @@ function addListItem(task: Task) {
     // If the checkbox is changed, update the task completed value
     checkbox.addEventListener("change", () => {
         task.completed = checkbox.checked
+        saveTasks()
     })
 
     // Set checkbox to be a checkbox that matches the status of its completed status
